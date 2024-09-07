@@ -38,9 +38,9 @@ extern "C" {
 #  endif /* __cplusplus */
 
 	extern void* LoadDIBitmap(char* filename, BITMAPINFO** info);
-	extern int SaveDIBitmap(char* filename, BITMAPINFO* info, void* bits);
+	extern int	SaveDIBitmap(char* filename, BITMAPINFO* info, void* bits);
 	extern void* ReadDIBitmap(BITMAPINFO** info);
-	extern int PrintDIBitmap(HWND owner, BITMAPINFO* info, void* bits);
+	extern int	PrintDIBitmap(HWND owner, BITMAPINFO* info, void* bits);
 
 	extern GLubyte* ConvertRGB(BITMAPINFO* info, void* bits);
 
