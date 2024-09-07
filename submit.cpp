@@ -142,7 +142,7 @@ void SetMaterial(GLfloat spec[], GLfloat amb[], GLfloat diff[], GLfloat shin[])
 void DrawTorso(void)
 {
 	glNewList(TORSO, GL_COMPILE);
-
+	
 	glPushMatrix();
 	glTranslatef(0.0, 0.0, 0.0);  // Adjust the position of the head relative to the torso
 	glScalef(1.20, 1.5, 1.50);
@@ -840,7 +840,7 @@ int angle = 40;
 void animation_walk(void)
 {
 	//write your code here
-
+	
 	/*
 	These codes are simplified. You may add more codes to control the robot walk better.
 	*/
@@ -1080,13 +1080,13 @@ void keyboard(unsigned char key, int x, int y)
 			right_hip = (right_hip - UPPER_LEG_RATE) % 360;
 		break;
 	case 'T':
-		/* wirte your code here */
+		 /* wirte your code here */
 		if (right_hip <= 0)
 			right_hip = (right_hip + UPPER_LEG_RATE) % 360;
 		if (left_hip <= 0)
 			left_hip = (left_hip + UPPER_LEG_RATE) % 360;
 		break;
-
+		
 
 	default:
 		i--;
@@ -1094,7 +1094,7 @@ void keyboard(unsigned char key, int x, int y)
 	}
 	if (i)
 		glutPostRedisplay();
-
+	
 }
 /* ----------- end of keyboard events handling functions ------------ */
 
